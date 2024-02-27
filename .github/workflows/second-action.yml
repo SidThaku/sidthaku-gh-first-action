@@ -1,0 +1,12 @@
+name: Second Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: 'Notify WebEx'
+        uses: qsnyder/action-wxt@ea6ec7075c508a0e39826c2c67173b5de1ace0e2
+        env:
+          TOKEN: YWVhMDdkZWEtZGFiMy00MTI4LTkzMTYtYTU2NThkZGQ2ZTgzZmJjYWI1MWYtNWRk_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f
+          ROOMID: 2eb0fd50-d55d-11ee-9d01-837746066568
+          MESSAGE: 'Hello World..!!'
